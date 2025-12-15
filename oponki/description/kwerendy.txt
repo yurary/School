@@ -1,0 +1,4 @@
+kw1:select * from opony order by cena asc limit 10;
+kw2:select producent, model, sezon, cena from opony where nr_kat = 10;
+kw3:select zamowienie.id_zam, zamowienie.ilosc, opony.model, opony.cena from zamowienie join opony on zamowienie.nr_kat = opony.nr_kat order by rand() limit 1;
+kw4:
