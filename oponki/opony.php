@@ -48,8 +48,33 @@
                 <img class="lewy_obraz" src="opona.png">
                 <h2>Opona dnia</h2>
 
+                <?php
+
+                    $zap = mysqli_query($connect, "select producent, model, sezon, cena from opony where nr_kat = 10;"); 
+                    while($days_opona = $zap -> fetch_array()){
+                        echo("
+                            <h2>$days_opona[producent], model $days_opona[model]</h2>
+                            <h2>Sezon: $days_opona[sezon]</h2>
+                            <h2>Tylko  $days_opona[cena]zł!</h2>
+
+                        ");
+                    }
+                ?>
+
             </section>
             <section style="background-color: #7986CB;">
+                <?php
+                    $zap = mysqli_query($connect, "select zamowienie.id_zam, zamowienie.ilosc, opony.model, opony.cena from zamowienie join opony on zamowienie.nr_kat = opony.nr_kat order by rand() limit 1;");
+                    while($zam = $zap -> fetch_assoc()){
+                        $wartosc = $zam['cena']*$zam['ilosc'];
+                        echo("
+                            <h2>$zam[id_zam], $zam[ilosc], sztuki modelu $zam[model] </h2>
+                            <h2>Wartość zamówienia: $wartosc zł</h2>
+                        ");
+
+                    }
+                ?>
+
                 <h3>Najnowsze zamówienie</h3>
             </section>
 
