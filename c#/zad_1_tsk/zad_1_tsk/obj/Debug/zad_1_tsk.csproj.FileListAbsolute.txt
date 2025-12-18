@@ -1,0 +1,10 @@
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\bin\Debug\zad_1_tsk.exe.config
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\bin\Debug\zad_1_tsk.exe
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\bin\Debug\zad_1_tsk.pdb
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.csproj.AssemblyReference.cache
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.Form1.resources
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.Properties.Resources.resources
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.csproj.GenerateResource.cache
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.csproj.CoreCompileInputs.cache
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.exe
+C:\Users\tsk\source\repos\zad_1_tsk\zad_1_tsk\obj\Debug\zad_1_tsk.pdb
