@@ -1,0 +1,26 @@
+ctx.fillRect(e.offsetX - 25, e.offsetY - 25, 50, 50);
+
+
+
+
+kordinatsMins.push({
+                        x: i,
+                        Y: j
+                    });
+                    kordinatsMins.push({
+                        x: i,
+                        Y: j
+                    });
+
+
+
+
+
+
+
+
+
+
+for(let k = 0; k < kordinatsMins.length; k++) {
+                        let element = kordinatsMins[k];
+                        check(element.x, element.y);}

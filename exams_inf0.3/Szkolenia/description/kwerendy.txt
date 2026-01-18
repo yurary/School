@@ -1,0 +1,4 @@
+kw1: select kod, nazwa, cena from kursy order by cena ASC;
+kw2:select nazwa from kursy;
+kw3:insert into uczestnicy value("", "Tadeusz", "Wysocki","36");
+kw4:--
