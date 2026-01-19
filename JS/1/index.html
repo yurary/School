@@ -28,7 +28,7 @@
         var ctx = c.getContext("2d");
         var xB = 500;
         var xM = 50;
-        var mines = 10;
+        var mines = 5;
         var xxM = xM/2;
         console.log("zxc", xxM);
         
@@ -58,13 +58,33 @@
         function check(x,y){
             ctx.beginPath();
             ctx.fillStyle = "Blue";
+            ctx.fillRect(x-50,y-50, xM+100,xM+100);
+           
+            ctx.fillStyle = "orange";
             ctx.fillRect(x,y, xM,xM);
+            
             ctx.stroke();
 
         }
-        function wheremins(){
+        function whereMines(cellX, cellY, mines, cellSize) {
+         let count = 0;
 
+            for (let mine of mines) {
+                const dx = Math.abs(mine.x - cellX);
+                const dy = Math.abs(mine.y - cellY);
+
+                if (
+                    dx <= cellSize &&
+                    dy <= cellSize &&
+                    !(dx === 0 && dy === 0)
+                    ) {
+                        count++;
+                    }
+            }
+
+            return count;
         }
+
         let n = 0;
         for(var j = 0; j<=xB; j+=xM){
             n++
@@ -96,47 +116,55 @@
 
             }
         }
-         for(let k = 0; k < kordinatsMins.length; k++) {
-                        let element = kordinatsMins[k];
-                        check(element.x, element.y);}
+       
         
 
         
         console.log(kordinatsMins);
+        
 
         
 
         c.addEventListener("click", (e) => {
             const mouseX = e.offsetX;
             const mouseY = e.offsetY;
-            
-            for(var j = 0; j<=xB; j+=xM){
-                for(var i = 0; i<= xB; i+=xM){
-                    if(mouseX>=i && mouseX<=i+xM && 
-                       mouseY>=j && mouseY<=j+xM){
-                    for(let k = 0; k < kordinatsMins.length; k++) {
-                        let element = kordinatsMins[k];
-                        
-                        
 
-                        if (mouseX >= element.x && mouseX <= element.x + xM &&
-                            mouseY >= element.y && mouseY <= element.y + xM
-                        ) {
-                            
-                            
-                            drawluse(i, j);
-                            return;
-                        }
-                            drawselect(i,j);
-                            
-                        }
-                    
+            for (let y = 0; y <= xB; y += xM) {
+                for (let x = 0; x <= xB; x += xM) {
 
-                
+                    if (
+                        mouseX >= x && mouseX < x + xM &&
+                        mouseY >= y && mouseY < y + xM
+                    ) {
+
+        
+                        for (let mine of kordinatsMins) {
+                            if (
+                                mouseX >= mine.x && mouseX < mine.x + xM &&
+                                mouseY >= mine.y && mouseY < mine.y + xM
+                            ) {
+                                drawluse(x, y);
+                                return;
+                            }
+                        }
+
+        
+                        const minesAround = whereMines(x, y, kordinatsMins, xM);
+
+                        drawselect(x, y);
+
+                        if (minesAround > 0) {
+                            ctx.fillStyle = "black";
+                            ctx.font = "20px Arial";
+                            ctx.fillText(minesAround, x + xM / 2 - 5, y + xM / 2 + 7);
+                        } else {
+                            ctx.fillStyle = "white";
+                            ctx.fillRect(x, y, xM, xM);
+                        }
+                        return;
                     }
                 }
             }
-    
         });
 
 
