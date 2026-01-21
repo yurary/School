@@ -1,0 +1,88 @@
+/* --- Styl globalny --- */
+* {
+    text-align: center;
+    font-family: Georgia, serif;
+    box-sizing: border-box; /* lepsza kontrola wymiarów */
+}
+
+/* --- Nagłówek i stopka --- */
+header, footer {
+    background-color: tomato;
+    color: mistyrose;       /* kolor tekstu */
+    padding: 20px;
+    font-family: Georgia, serif;
+}
+
+/* --- Nawigacja --- */
+nav {
+    width: 20%;
+    float: left;
+}
+
+/* --- Bloki ogólne --- */
+div {
+    background-color: #ffaea5;
+    height: 170px;
+    font-size: 200%;
+    margin: 10px auto;
+}
+
+/* --- Blok specyficzny --- */
+.blok1 {
+    background-color: mistyrose;
+}
+
+/* --- Główna sekcja --- */
+main {
+    background-color: mistyrose;
+    width: 80%;
+    height: 510px;
+    overflow: auto; /* przewijanie tylko przy przepełnieniu */
+    float: left;
+    padding: 10px;
+}
+
+/* --- Sekcje ukryte --- */
+.sec2, .sec3 {
+    display: none;
+}
+
+/* --- Tabela --- */
+table {
+    width: 60%;
+    border: 1px dashed indigo;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table td, table th {
+    padding: 10px;
+    border: 1px dashed indigo;
+    text-align: center;
+}
+
+/* --- Lista rozwijana i przyciski --- */
+select, button {
+    padding: 20px;
+    font-size: 1em;
+}
+
+/* --- Lista elementów (li) --- */
+li {
+    transition: font-size 0.3s ease; /* płynna zmiana */
+}
+
+li:hover {
+    font-size: 180%;
+}
+
+/* --- Lista definicji (dt) --- */
+dl dt {
+    font-weight: bold;
+    font-style: italic;
+    transition: font-size 0.3s ease;
+}
+
+dl dt:hover {
+    font-size: 180%;
+}
