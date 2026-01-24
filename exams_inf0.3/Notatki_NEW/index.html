@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer zadań</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <section class="blockBoczny">
+        <img src="img/obraz.jpg">
+    </section>
+    <header>
+        <h2>Moje zadania</h2>
+    </header>
+    <nav>
+        <input placeholder="Dodaj zadanie..." id="new"><button onclick="dodaj()">dodaj</button>
+        
+
+    </nav>
+    
+    <main>
+        <ul id="lista">
+            <li>Wyprowadzić psa <button class="wykonane" onclick="delite(this)"> Wykonane</button></li>
+            <li>Gimnastyka <button class="wykonane" onclick="delite(this)"> Wykonane</button></li>
+            <li>Zakupy <button class="wykonane" onclick="delite(this)"> Wykonane</button></li>
+            <li>Spacer z kumplem <button class="wykonane" onclick="delite(this)"> Wykonane</button></li>
+            <li>Odrabianie lekcji z młodszą siostrą <button class="wykonane" onclick="delite(this)"> Wykonane</button></li>
+            <li>Projekt na geografię <button class="wykonane" onclick="delite(this)"> Wykonane</button></li>
+        </ul>
+
+    </main>
+    <footer>
+        <h3>notatki:00000000000</h3>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

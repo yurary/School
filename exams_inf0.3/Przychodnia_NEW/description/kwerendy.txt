@@ -1,0 +1,4 @@
+kw1:select nazwa, cena, opis from abonamenty;
+kw2:select ROUND(AVG(cena), 2) AS Srednio_abonament from abonamenty;
+kw3: select a.nazwa AS abonament, c.cecha from abonamenty a join SzczegolyAbonamentu sa on a.id = sa.abonamenty_id join cechy c on sa.cechy_id = c.id where a.id = 1;
+kw4:select nazwa, opis from abonamenty where opis like "%zdrowie%" or "%opieka%";

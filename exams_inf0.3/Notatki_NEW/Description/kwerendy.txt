@@ -1,0 +1,4 @@
+kw1:select priorytet from notatki where osoby_id = 3 order by priorytet ASC limit 1;
+kw2:select nazwa, priorytet from notatki where nazwa like "%na%";
+kw3:select o.imie, n.nazwa from osoby o join notatki n on o.id = n.osoby_id where priorytet = 5;
+kw4:
