@@ -1,0 +1,17 @@
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\bin\Debug\net10.0-windows\zad_15_tsk.exe
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\bin\Debug\net10.0-windows\zad_15_tsk.deps.json
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\bin\Debug\net10.0-windows\zad_15_tsk.runtimeconfig.json
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\bin\Debug\net10.0-windows\zad_15_tsk.dll
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\bin\Debug\net10.0-windows\zad_15_tsk.pdb
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_13_tsk.Form1.resources
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.csproj.GenerateResource.cache
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.AssemblyInfoInputs.cache
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.AssemblyInfo.cs
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.csproj.CoreCompileInputs.cache
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.sourcelink.json
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.dll
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\refint\zad_15_tsk.dll
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.pdb
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\zad_15_tsk.genruntimeconfig.cache
+C:\code\xampp\htdocs\school\c#\zad_15_tsk\zad_15_tsk\obj\Debug\net10.0-windows\ref\zad_15_tsk.dll
